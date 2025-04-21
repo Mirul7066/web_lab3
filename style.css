@@ -82,6 +82,43 @@ section:hover {
     box-shadow: 0 5px 20px rgba(255, 255, 255, 0.08);
 }
 
+/* Hobbies List */
+ul {
+    padding-left: 20px;
+    list-style: none;
+}
+
+ul li {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+    background-color: #1b1b1b;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px rgba(255, 255, 255, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+ul li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 20px rgba(255, 255, 255, 0.08);
+}
+
+ul li img {
+    width: 50px; /* Default size for all pages */
+    height: 50px; /* Default size for all pages */
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+}
+
+/* Hobbies Page Image Size */
+body.hobbies-page ul li img {
+    width: 80px;  /* Larger size for hobbies page */
+    height: 80px; /* Larger size for hobbies page */
+}
+
 /* Special Hero Section for index.html only */
 .hero-home {
     background: linear-gradient(to right, #000000, #1a1a1a);
